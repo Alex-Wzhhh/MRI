@@ -1,0 +1,20 @@
+center_id: center1
+manifest_path: /home/alex/Project/MRI/Data/center1_audit/case_manifest.csv
+labels_path: /home/alex/Project/MRI/Data/center1_audit/labels_clean.csv
+canonical_manifest_path: /home/alex/Project/MRI/Data/manifests/canonical_manifest.csv
+binary_ready_path: /home/alex/Project/MRI/Data/manifests/binary_ready.csv
+excluded_cases_path: /home/alex/Project/MRI/Data/manifests/excluded_cases.csv
+sequence_names:
+  - T1
+  - T2
+  - DWI
+  - AP
+  - PVP
+  - HBP
+image_suffixes:
+  - "0000"
+  - "0001"
+  - "0002"
+  - "0003"
+  - "0004"
+  - "0005"

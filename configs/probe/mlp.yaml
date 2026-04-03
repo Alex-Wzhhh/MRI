@@ -1,0 +1,9 @@
+probe_type: mlp
+random_state: 42
+hidden_layer_sizes:
+  - 128
+dropout: 0.0
+activation: relu
+alpha: 0.0001
+max_iter: 500
+early_stopping: true

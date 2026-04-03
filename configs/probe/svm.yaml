@@ -1,0 +1,4 @@
+probe_type: svm
+random_state: 42
+C: 1.0
+class_weight: balanced

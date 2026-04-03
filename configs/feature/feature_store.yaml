@@ -1,0 +1,6 @@
+feature_root: /home/alex/Project/MRI/Data/features/stage1
+index_path: /home/alex/Project/MRI/Data/features/stage1/feature_index.csv
+extract_version: medsam2_stage1_v1
+pool_type: avg_pool_masked
+slice_aggregation: mean
+save_dense_debug: false

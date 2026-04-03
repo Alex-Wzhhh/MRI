@@ -1,0 +1,5 @@
+probe_type: logistic
+random_state: 42
+max_iter: 2000
+C: 1.0
+class_weight: balanced

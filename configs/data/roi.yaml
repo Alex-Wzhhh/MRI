@@ -1,0 +1,8 @@
+roi_types:
+  - tumor
+  - peritumor_3mm
+  - peritumor_5mm
+peritumor_mm:
+  peritumor_3mm: 3.0
+  peritumor_5mm: 5.0
+min_voxels: 10

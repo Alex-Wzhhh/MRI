@@ -6,7 +6,7 @@
 
 当前目标不是直接做最终多模态大模型，而是先验证 `MedSAM2` 视觉特征对 `MVI` 二分类是否具备基础可分性，并把整条实验链路整理成可复用工程。
 
-本 README 主要依据本地 `.ai_context/` 中的项目上下文整理而成，但 `.ai_context/` 仅用于本地协作辅助，不属于 GitHub 共享内容，上传时不要包含。
+本 README 主要依据本地 `.ai_context/` 中的项目上下文整理而成。`.ai_context/` 仅用于本地辅助记录，不纳入版本管理。
 
 ## 当前状态
 
@@ -120,7 +120,7 @@ python src/probes/train_probe.py \
 - `configs/encoder/medsam2.yaml`
 - `configs/feature/feature_store.yaml`
 
-如果组员将仓库克隆到不同路径，首先需要同步修改这些配置文件中的本地路径。
+如果仓库位于不同的本地路径，需要先同步修改这些配置文件中的绝对路径。
 
 当前开发环境记录如下：
 
@@ -139,7 +139,7 @@ python src/probes/train_probe.py \
 - `scipy`
 - `PyYAML`
 
-`MedSAM2/requirements.txt` 中还列出了其自身依赖。如果组员要重新配置环境，建议先安装该文件中的依赖，再补充本项目主线使用的包。
+`MedSAM2/requirements.txt` 中还列出了其自身依赖。重新配置环境时，建议先安装该文件中的依赖，再补充本项目主线使用的包。
 
 ## 关键输入与输出
 
@@ -168,18 +168,18 @@ python src/probes/train_probe.py \
 - `outputs/reports/results.md`
 - `work-report/stage1_mvi_feature_probe_report_2026-04-01.md`
 
-## 共享给组员时的建议
+## 版本管理边界
 
-建议上传到 GitHub 的内容：
+通常纳入版本管理的内容：
 
 - `README.md`
 - `configs/`
 - `src/`
 - `MedSAM2/`
 - `work-report/`
-- `outputs/reports/`（如果希望保留当前实验记录）
+- `outputs/reports/`（如果需要保留当前实验记录）
 
-不要上传的内容：
+通常不纳入版本管理的内容：
 
 - `.ai_context/`
 - `Data/`
@@ -187,7 +187,7 @@ python src/probes/train_probe.py \
 - `nnUNet/`
 - 原始影像、分割、临床 CSV、模型权重等大文件或敏感数据
 
-当前 `.gitignore` 已忽略 `Data/`、`weights/`、`nnUNet/` 和 `.ai_context/`，因此正常提交代码时，这些内容默认不会进入 Git。
+当前 `.gitignore` 已忽略 `Data/`、`weights/`、`nnUNet/` 和 `.ai_context/`，正常提交代码时这些内容默认不会进入 Git。
 
 ## 备注
 
